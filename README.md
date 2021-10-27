@@ -1,5 +1,5 @@
 # interactive-pricing-component-challenge
-<u>Interactive Pricing Component Challenge</u>
+Interactive Pricing Component Challenge
 
 Reto de desarrollo web de frontendmentor.io.
 
