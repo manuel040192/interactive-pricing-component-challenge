@@ -1,10 +1,13 @@
-/* RANGE SLIDER */
+const range = document.querySelector('.range')
+const thumb = document.querySelector('.thumb')
+const track = document.querySelector('.track-inner')
 
-var slider1 = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider1.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider1.oninput = function() {
-  output.innerHTML = this.value;
+const updateSlider = (value) => {
+  thumb.style.left = `${value}%`
+  track.style.width = `${value}%`
 }
+
+range.oninput = (e) =>
+  updateSlider(e.target.value)
+
+updateSlider(50) // Init value
